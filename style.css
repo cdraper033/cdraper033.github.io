@@ -1,17 +1,13 @@
-
-body
-{
+body {
     background-color: #00296B;
 }
 
-p
-{
+p {
     font-family: 'Quicksand', sans-serif;
     color: #80C1FF;
 }
 
-.welcome
-{
+.welcome {
     color: #80C1FF;
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
@@ -19,8 +15,7 @@ p
     padding-left: 20%;
 }
 
-.disclaimer
-{
+.disclaimer {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     padding-left: 20%;
@@ -28,35 +23,31 @@ p
     font-size: 30px;
 }
 
-.intro
-{
+.intro {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     text-align: center;
     padding: 1% 0 0 20%;
 }
 
-.wrapper .sidebar
-{
+.wrapper .sidebar {
     background-color: #FDC500;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 500px;
+    width: 400px;
     height: 100%;
     padding: 30px 0;
     transition: all 0.5s ease;
 }
 
-.wrapper .sidebar .avatar
-{
+.wrapper .sidebar .avatar {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.wrapper .sidebar .avatar img
-{
-    display: block;
+.wrapper .sidebar .avatar img {
+    display: grid;
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -64,43 +55,52 @@ p
     padding: 30px;
 }
 
-.wrapper .sidebar .avatar .myName
-{
+.wrapper .sidebar .avatar .myName {
     font-family: 'Oswald', sans-serif;
     color: #003366;
     font-size: 45px;
     margin: 15px 0 1px;
 }
 
-.wrapper .sidebar .avatar .myRole
-{
+.wrapper .sidebar .avatar .myRole {
     font-family: 'Quicksand', sans-serif;
     color: #004F99;
     font-size: 30px;
 }
 
-div.wrapper{
+div.wrapper {
 
-        margin-left: 200px;
-        padding: 1px 16px;
-        height: 1000px;
-    
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+
 }
 
-.sidebar a {
+.sidebar a,
+.projects {
     display: block;
     color: #00296B;
     padding: 16px;
     text-decoration: none;
-  }
-
-.sidebar a:hover:not(.active) {
-background-color: #005CB3;
-color: white;
 }
 
-a
-{
+.sidebar a:hover:not(.active):before,
+.projects:hover {
+    background-color: #005CB3;
+    color: white;
+}
+
+.subNavContent {
+    display: none;
+    background-color: #FB8500;
+    padding-left: 8px;
+}
+
+a {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
+}
+
+.myBody {
+    display: grid;
 }
